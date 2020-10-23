@@ -1,0 +1,100 @@
+import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
+import PropTypes from 'prop-types';
+import anime from 'animejs';
+import styled from 'styled-components';
+import IconLoader from '../images/logo.svg';
+
+const StyledLoader = styled.div`
+  ${({ theme }) => theme.mixins.flexCenter};
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  z-index: 99;
+
+  .logo-wrapper {
+    width: max-content;
+    max-width: 100px;
+    transition: var(--transition);
+    opacity: ${props => (props.isMounted ? 1 : 0)};
+
+    & img {
+      animation: beat 0.9s infinite alternate;
+      transform-origin: center;
+    }
+
+    /* Heart beat animation */
+    @keyframes beat {
+      to {
+        transform: scale(1.4);
+      }
+    }
+  }
+`;
+
+const Loader = ({ finishLoading }) => {
+  const animate = () => {
+    const loader = anime.timeline({
+      complete: () => finishLoading(),
+    });
+
+    loader
+      .add({
+        targets: '#logo',
+        delay: 300,
+        duration: 1500,
+        easing: 'easeInOutQuart',
+        strokeDashoffset: [anime.setDashoffset, 0],
+      })
+      .add({
+        targets: '#logo',
+        duration: 700,
+        easing: 'easeInOutQuart',
+        opacity: 1,
+      })
+      .add({
+        targets: '#logo',
+        delay: 500,
+        duration: 300,
+        easing: 'easeInOutQuart',
+        opacity: 0,
+        scale: 0.1,
+      })
+      .add({
+        targets: '.loader',
+        duration: 200,
+        easing: 'easeInOutQuart',
+        opacity: 0,
+        zIndex: -1,
+      });
+  };
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setIsMounted(true), 10);
+    animate();
+    return () => clearTimeout(timeout);
+  }, []);
+
+  return (
+    <StyledLoader className="loader" isMounted={isMounted}>
+      <Helmet bodyAttributes={{ class: `hidden` }} />
+
+      <div className="logo-wrapper">
+        <img src={IconLoader} alt="logo" id="logo" />
+      </div>
+    </StyledLoader>
+  );
+};
+
+Loader.propTypes = {
+  finishLoading: PropTypes.func.isRequired,
+};
+
+export default Loader;
