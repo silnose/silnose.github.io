@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://silnose.github.io/sitemap.xml
+Host: https://silnose.github.io
