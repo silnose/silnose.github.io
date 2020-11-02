@@ -172,7 +172,7 @@ const About = () => {
               <a href="http://um.edu.ar/es/ua/fi.html" target="_blank" rel="noopener noreferrer">
                 Informatic Enginner Degree
               </a>
-              , in the meantime I started my profesional carrear taking to the cloud and digitizing
+              , in the meantime I started my professional career taking to the cloud and digitizing
               some local companies.
             </p>
 

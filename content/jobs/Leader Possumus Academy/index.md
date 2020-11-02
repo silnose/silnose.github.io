@@ -3,7 +3,7 @@ date: '2018-01-02'
 title: 'Leader of Possumus Academy'
 company: 'Possumuss SRL'
 location: 'San Rafael, Mza - Arg'
-range: 'October 2018 - March 2019'
+range: 'March 2018 - March 2019'
 url: 'https://www.possumus.tech'
 ---
 
