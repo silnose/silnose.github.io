@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import { srConfig, professionalTitle } from '@config';
@@ -127,25 +127,32 @@ const About = () => {
   `);
 
   const revealContainer = useRef(null);
-
+  const revealArchiveLink = useRef(null);
   useEffect(() => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
   const skills = [
     'JavaScript (ES6+)',
+    'NPM',
     'HTML5 & (S)CSS',
-    'React',
+    'CSS3',
+    'Bootstrap',
+    'ReactJS',
+    'Redux',
+    'React Hooks',
+    'React Context',
+    'WebPack',
+    'PWA',
     'Vue',
-    'Git',
-    'Node.js',
-    'SQL Server',
-    'MySQL',
+    'NodeJS',
     'API Rest',
     'GraphQL',
-    '.NETCore',
-    'Swift',
     'Cypress.js',
+    'Jest',
+    'GIT',
+    '.NetCore',
+    'Swift',
   ];
 
   return (
@@ -160,15 +167,22 @@ const About = () => {
               in Argentina. I have 8+ years of experience in design and development of software
               solutions.
             </p>
-            {/* <p>‍ {professionalTitle}</p> */}
-
             <p>
-              I graduated from &nbsp; Mendoza University, with a{' '}
+              I graduated from Mendoza University, with a
               <a href="http://um.edu.ar/es/ua/fi.html" target="_blank" rel="noopener noreferrer">
                 Informatic Enginner Degree
               </a>
               , in the meantime I started my profesional carrear taking to the cloud and digitizing
-              some local companies then I started to work in some software factories.
+              some local companies.
+            </p>
+
+            <p>
+              I've worked with{' '}
+              <Link to="/archive" ref={revealArchiveLink}>
+                various types of projects
+              </Link>{' '}
+              and have mastered multiple programming languages and coding as well as software
+              testing and debugging.
             </p>
             <p>
               Currently I'm improving my{' '}
@@ -183,9 +197,14 @@ const About = () => {
             </p>
 
             <p>
-              I'm always interested in the entire <b>frontend</b> spectrum. I like to feel the
-              satisfaction of the job done so my main interest is to work for objectives. I am
-              always in search of continuous improvement and innovation of processes.
+              I'm always interested in the entire <b>frontend</b> spectrum that's why I'm focusing
+              on making <b> accessible and usable developments</b> accessible to everyone
+            </p>
+
+            <p>
+              I like to feel the satisfaction of the job done so my main interest is to work for
+              objectives. I am always in search of &nbsp;
+              <b>continuous improvement and innovation of processes.</b>
             </p>
 
             <p>My current stack includes:</p>

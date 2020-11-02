@@ -41,13 +41,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html {
-      --primary: #1a2744;
+      --primary: #05001b;
       --primary_shadow: rgba(2, 12, 27, 0.7);
       --primary_deep_shadow: rgba(10,25,47,0.85);
       --secondary: #bb86fc;
       --tertiary: #fff;
-      --quaternary: #172a45;
+      --quaternary: rgba(187,134,252,0.2);
       --quinary: #ccd6f6;
+      --code: rgba(0,0,0,0.3)
     }
 
     html[data-theme="light"] {
@@ -58,6 +59,7 @@ const GlobalStyle = createGlobalStyle`
       --tertiary: #000;
       --quaternary: #cfcfcf;
       --quinary: #36464d;
+      --code: rgba(1,1,1,2.2)
     }
 
   html {
@@ -196,6 +198,11 @@ const GlobalStyle = createGlobalStyle`
   .medium-heading {
     margin: 0;
     font-size: clamp(40px, 8vw, 60px);
+  }
+
+    .small-heading {
+    margin: 0;
+    font-size: clamp(35px, 8vw, 45px);
   }
 
   .numbered-heading {

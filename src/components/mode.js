@@ -7,7 +7,7 @@ import { loaderDelay } from '@utils';
 const Button = styled.button`
   margin-top: auto;
   cursor: pointer;
-  background-color: ${props => (props.dark ? '#fff' : '#00051de8')};
+  background-color: ${props => (props.dark ? '#fff' : '#05001b')};
   border-radius: 50% !important;
   padding: 16px;
   display: -webkit-box;

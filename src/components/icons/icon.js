@@ -17,6 +17,8 @@ import {
   IconTwitter,
   IconZap,
   IconArrowDown,
+  IconEmail,
+  IconTelegram,
 } from '@components/icons';
 
 const Icon = ({ name }) => {
@@ -53,6 +55,10 @@ const Icon = ({ name }) => {
       return <IconMoon />;
     case 'ArrowDown':
       return <IconArrowDown />;
+    case 'Email':
+      return <IconEmail />;
+    case 'Telegram':
+      return <IconTelegram />;
     default:
       return <IconExternal />;
   }

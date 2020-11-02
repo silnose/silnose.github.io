@@ -7,7 +7,7 @@ import { KEY_CODES } from '@utils';
 import sr from '@utils/sr';
 
 const StyledJobsSection = styled.section`
-  max-width: 700px;
+  max-width: 900px;
 
   .inner {
     display: flex;
@@ -54,6 +54,20 @@ const StyledTabList = styled.ul`
       @media (max-width: 480px) {
         padding-right: 25px;
       }
+    }
+
+    &:first-child button:hover {
+      color: #61de50;
+    }
+
+    &:nth-child(2) button:hover {
+      color: #e98000;
+    }
+    &:nth-child(3) button:hover {
+      color: #e98000;
+    }
+    &:nth-child(4) button:hover {
+      color: #e98000;
     }
   }
 `;
@@ -226,7 +240,7 @@ const Jobs = () => {
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={onKeyDown}>
           {jobsData &&
             jobsData.map(({ node }, i) => {
-              const { company } = node.frontmatter;
+              const { title } = node.frontmatter;
               return (
                 <li key={i}>
                   <StyledTabButton
@@ -238,7 +252,7 @@ const Jobs = () => {
                     aria-selected={activeTabId === i ? true : false}
                     aria-controls={`panel-${i}`}
                     tabIndex={activeTabId === i ? '0' : '-1'}>
-                    <span>{company}</span>
+                    <span>{title}</span>
                   </StyledTabButton>
                 </li>
               );

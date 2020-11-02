@@ -15,3 +15,4 @@ export { default as Projects } from './sections/projects';
 export { default as Contact } from './sections/contact';
 export { default as Greeting } from './greeting';
 export { default as Courses } from './sections/courses';
+export { default as Carousel } from './carousel';

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { srConfig, email } from '@config';
+import { Icon } from '@components/icons';
+import { socialMedia, srConfig } from '@config';
 import sr from '@utils/sr';
 
 const StyledContactSection = styled.section`
@@ -39,7 +40,28 @@ const StyledContactSection = styled.section`
     margin-top: 50px;
   }
 `;
+const StyledSocialLinks = styled.div`
+  display: block;
+  width: 100%;
+  max-width: 270px;
+  margin: 0 auto 10px;
+  color: var(--tertiary);
 
+  ul {
+    ${({ theme }) => theme.mixins.flexBetween};
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    a {
+      padding: 10px;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+`;
 const Contact = () => {
   const revealContainer = useRef(null);
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
@@ -50,13 +72,20 @@ const Contact = () => {
 
       <h2 className="title">Get In Touch</h2>
 
-      <p>
-        Nowadays <b>I'm looking for new opportunities</b>, so let's talk
-      </p>
+      <p>You can find me around here : </p>
 
-      <a className="email-link" href={`mailto:${email}`}>
-        Say Hello
-      </a>
+      <StyledSocialLinks>
+        <ul>
+          {socialMedia &&
+            socialMedia.map(({ name, url }, i) => (
+              <li key={i}>
+                <a href={url} aria-label={name}>
+                  <Icon name={name} />
+                </a>
+              </li>
+            ))}
+        </ul>
+      </StyledSocialLinks>
     </StyledContactSection>
   );
 };

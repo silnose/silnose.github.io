@@ -8,10 +8,10 @@ export const Greeting = () => {
     const getGreetings = () => {
       const now = new Date();
       const hrs = now.getHours();
-      let result = 'Hey ';
+      let result = '';
 
       if (hrs > 0) {
-        result = 'Mornin Sunshine!';
+        result = 'Hi';
       } // REALLY early
       if (hrs > 6) {
         result = 'Good morning';
@@ -31,8 +31,8 @@ export const Greeting = () => {
   }, []);
 
   const StyledGreeting = styled.div`
-    h1 {
-      margin: 1px 0 30px 0px;
+    h3 {
+      margin: 1px 0 15px 0px;
       color: var(--secondary);
       font-family: var(--font-mono);
       font-size: clamp(var(--fz-sm), 6vw, var(--fz-md));
@@ -46,7 +46,7 @@ export const Greeting = () => {
 
   return (
     <StyledGreeting>
-      <h1>Hey! {msg}</h1>
+      <h3> Hey... {msg}!</h3>
     </StyledGreeting>
   );
 };

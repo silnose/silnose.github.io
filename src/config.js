@@ -1,6 +1,6 @@
 module.exports = {
   email: 'murgosilvana@gmail.com',
-  professionalTitle: 'Frontend Software Developer',
+  professionalTitle: 'FullStack Software Developer',
   platzi: 'https://platzi.com/@silnose/',
   socialMedia: [
     {
@@ -12,12 +12,16 @@ module.exports = {
       url: 'https://www.linkedin.com/in/silvanaanahimurgo',
     },
     {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/silnose',
-    },
-    {
       name: 'Twitter',
       url: 'https://twitter.com/silnose',
+    },
+    {
+      name: 'Telegram',
+      url: 'https://t.me/silnose',
+    },
+    {
+      name: 'Email',
+      url: 'https://mail.google.com/mail/u/0/?view=cm&fs=1&to=murgosilvana@gmail.com&tf=1',
     },
   ],
 
@@ -29,6 +33,14 @@ module.exports = {
     {
       name: 'Experience',
       url: '/#jobs',
+    },
+    {
+      name: 'Projects',
+      url: '/#projects',
+    },
+    {
+      name: 'Courses',
+      url: '/#courses',
     },
     {
       name: 'Contact',

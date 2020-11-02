@@ -113,6 +113,11 @@ const StyledSidebar = styled.aside`
     color: var(--quinary);
     font-family: var(--font-mono);
     text-align: center;
+
+    .resume-button {
+      ${({ theme }) => theme.mixins.smallButton};
+      margin-left: 5px;
+    }
   }
 
   ol {
@@ -124,8 +129,7 @@ const StyledSidebar = styled.aside`
     li {
       position: relative;
       margin: 0 auto 20px;
-      /* counter-increment: start 0; */
-      /* counter-increment: item 1; */
+      counter-increment: item 1;
       font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
 
       @media (max-width: 600px) {
@@ -252,6 +256,9 @@ const Menu = () => {
                 ))}
               </ol>
             )}
+            <a href="/resume.pdf" className="resume-button">
+              My Resume
+            </a>
           </nav>
         </StyledSidebar>
       </div>

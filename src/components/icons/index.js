@@ -15,3 +15,5 @@ export { default as IconZap } from './zap';
 export { default as IconSun } from './sun';
 export { default as IconMoon } from './moon';
 export { default as IconArrowDown } from './arrowDown';
+export { default as IconEmail } from './email';
+export { default as IconTelegram } from './telegram';
