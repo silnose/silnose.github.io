@@ -42,8 +42,12 @@ const Footer = () => (
   <StyledFooter>
     <StyledCredit tabindex="-1">
       <a href="https://github.com/silnose">
-        <div> {'</>'} with 💜 from 🇦🇷 by @silnose</div>
+        <div> {'</>'} with 💜 from 🇦🇷 </div>
       </a>
+      <br />
+      <small>
+        <a href="https://github.com/bchiang7">Thanks @bchiang7</a>
+      </small>
     </StyledCredit>
   </StyledFooter>
 );

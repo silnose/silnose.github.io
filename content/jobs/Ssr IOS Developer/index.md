@@ -10,4 +10,4 @@ url: 'https://wakapi.com/'
 - Collaborated with designer team to ensure designs was following the IOS Design Guidelines.
 - Development of IOS SDK to unify authentication and authorization process for third party aplications.
 - Building , publishing and distribution of application (Apple Store / Firebase)
-  -Communicates team needs to other departments
+  -Communicates team needs to other departments.

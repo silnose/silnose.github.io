@@ -198,7 +198,7 @@ const About = () => {
 
             <p>
               I'm always interested in the entire <b>frontend</b> spectrum that's why I'm focusing
-              on making <b> accessible and usable developments</b> accessible to everyone
+              on making <b> accessible and usable developments</b> accessible to everyone.
             </p>
 
             <p>
