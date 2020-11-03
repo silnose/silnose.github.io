@@ -1,6 +1,6 @@
 module.exports = {
   email: 'murgosilvana@gmail.com',
-  professionalTitle: 'FullStack Software Developer',
+  professionalTitle: 'Software Developer',
   platzi: 'https://platzi.com/@silnose/',
   socialMedia: [
     {

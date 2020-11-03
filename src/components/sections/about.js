@@ -145,6 +145,9 @@ const About = () => {
     'WebPack',
     'PWA',
     'Vue',
+    'Gatsby',
+    'Next.JS',
+    'TypeScript',
     'NodeJS',
     'API Rest',
     'GraphQL',
@@ -184,6 +187,13 @@ const About = () => {
               and have mastered multiple programming languages and coding as well as software
               testing and debugging.
             </p>
+
+            <p>
+              I'm always interested in the entire <b>frontend</b> spectrum that's why nowadays I'm
+              focusing my career on making <b> accessible and usable developments</b> accessible to
+              everyone.
+            </p>
+
             <p>
               Currently I'm improving my{' '}
               <a
@@ -195,17 +205,12 @@ const About = () => {
               skills. I am a continuous learner I'm always looking for new things to learn, with
               Google as my mentor and VScode as my notebook.
             </p>
-
-            <p>
-              I'm always interested in the entire <b>frontend</b> spectrum that's why I'm focusing
-              on making <b> accessible and usable developments</b> accessible to everyone.
-            </p>
-
+            {/*
             <p>
               I like to feel the satisfaction of the job done so my main interest is to work for
               objectives. I am always in search of &nbsp;
               <b>continuous improvement and innovation of processes.</b>
-            </p>
+            </p> */}
 
             <p>My current stack includes:</p>
           </div>
