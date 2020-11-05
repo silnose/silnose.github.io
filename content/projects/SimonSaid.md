@@ -2,7 +2,7 @@
 date: '2020-02-04'
 title: 'Simon Says'
 github: 'https://github.com/silnose/c-vainilla-js'
-external: ''
+external: 'https://silnose.github.io/c-vainilla-js/'
 tech:
   - HTML
   - CSS
