@@ -39,8 +39,8 @@ module.exports = {
       url: '/#projects',
     },
     {
-      name: 'Courses',
-      url: '/#courses',
+      name: 'Kaizen',
+      url: '/#getting-better',
     },
     {
       name: 'Contact',

@@ -18,7 +18,7 @@ const StyledCarouselSection = styled.section`
       border-radius: var(--border-radius);
       border: 2px solid var(--quaternary);
       background-color: transparent;
-      height: 18vh;
+      height: 20vh;
       width: 150px;
       margin-top: 10px;
       position: relative;
@@ -28,7 +28,7 @@ const StyledCarouselSection = styled.section`
       white-space: nowrap;
       overflow: hidden;
       @media (max-width: 480px) {
-        height: 20vh;
+        height: 22vh;
         width: 110px;
       }
 
